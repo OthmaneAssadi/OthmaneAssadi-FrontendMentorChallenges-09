@@ -92,6 +92,7 @@ display: none;
 }
 .btn {
     border: none;
+    background-color: transparent;
     color: var(--Soft-red);
     cursor: pointer;
 }
@@ -127,14 +128,6 @@ h2.bold {
     display: none;
 }
 
- .womenmob {
-    display: block;
-    position: absolute;
-    top: -15% ;
-    left: 17%;
-    transform: translate(-50% 50%);
-    height: 200px;
-}
 
 .cards {
     margin: 90px auto;
@@ -149,8 +142,11 @@ h2.bold {
 .container {
     margin-top: 200px;
     height: 60%;
-    width: 65%;
+    width: 90%;
     max-height: max-content;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
 }
 .btn {
     padding-bottom: 5px;
