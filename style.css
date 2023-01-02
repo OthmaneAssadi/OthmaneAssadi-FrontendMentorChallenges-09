@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Text */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    /* Background gradient */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    /* Text */
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Soft-blue);
+}
+
+.container {
+    width: 60%;
+    min-height: 600px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    position: relative;
+}
+
+
+.imgsdesk .women {
+    position: absolute;
+    left: -5%;
+    top: 19%;
+
+}
+
+.imgsdesk .box {
+    position: absolute;
+    left: -8.1%;
+    top: 42%;
+    z-index: 1;
+}
+.womenmob {
+display: none;
+}
+.para h2 {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.content p {
+    font-size: 12px;
+    margin-top: 10px;
+    width: 50%;
+    color: var(--Very-dark-grayish-blue);
+    display: block;
+   
+}
+
+.para span {
+    color: var(--Soft-red);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cards {
+    width: 35%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-right: 150px;
+
+}
+.btn {
+    border: none;
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+
+h2.bold {
+    font-weight: 700;
+}
+
+.para {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display:none;
+    max-height: 3%;
+    transition: 1s ease ;
+}
+.content:last-child {
+    padding-bottom: .5em;
+}
+.active {
+    display: block;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url(images/bg-pattern-mobile.svg);
+    }
+.imgsdesk {
+    display: none;
+}
+
+ .womenmob {
+    display: block;
+    position: absolute;
+    top: -15% ;
+    left: 17%;
+    transform: translate(-50% 50%);
+    height: 200px;
+}
+
+.cards {
+    margin: 90px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.content p {
+    width: 90%;
+}
+.container {
+    margin-top: 200px;
+    height: 60%;
+    width: 65%;
+    max-height: max-content;
+}
+.btn {
+    padding-bottom: 5px;
+}
+
+}
